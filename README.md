@@ -14,7 +14,7 @@ scp -r directory user@host:"'path/with spaces/'"
 ```
 
 Delete all files matching multiple extensions recursively in directory
-```
+```console
 find . \( -name '*.ext1' -or -name '*.ext2' \) -delete
 ```
 
