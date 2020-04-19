@@ -1,7 +1,7 @@
 # oneliners
 A collection of terminal oneliners
 
-## Bash
+## Terminal
 
 Replace spaces with dots in filenames recursively
 ```console
