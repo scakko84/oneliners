@@ -17,6 +17,10 @@ Delete all files matching multiple extensions recursively in directory
 ```console
 find . \( -name '*.ext1' -or -name '*.ext2' \) -delete
 ```
+Write image file to usb device
+```console
+dd if=file.img of=/dev/sdx bs=4M oflag=sync
+```
 
 ## MacOS
 
