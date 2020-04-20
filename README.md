@@ -22,7 +22,7 @@ Write image file to usb device
 dd if=file.img of=/dev/sdx bs=4M oflag=sync
 ```
 
-Generate a secure random password
+Generate a pseudo-random password from secure random data
 ```console
 openssl rand -base64 32
 ```
