@@ -22,6 +22,11 @@ Write image file to usb device
 dd if=file.img of=/dev/sdx bs=4M oflag=sync
 ```
 
+Generate a secure random password
+```console
+openssl rand -base64 32
+```
+
 ## MacOS
 
 Convert iso file to img file
