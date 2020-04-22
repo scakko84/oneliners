@@ -22,9 +22,16 @@ Write image file to usb device
 dd if=file.img of=/dev/sdx bs=4M oflag=sync
 ```
 
+## OpenSSL
+
 Generate a pseudo-random password from secure random data
 ```console
 openssl rand -base64 32
+```
+
+Download a server certificate in DER format from an endpoint
+```console
+openssl s_client -showcerts -connect www.example.com:443 < /dev/null | openssl x509 -outform DER > www.example.com.der
 ```
 
 ## MacOS
