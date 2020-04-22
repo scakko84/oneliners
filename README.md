@@ -31,7 +31,7 @@ openssl rand -base64 32
 
 Download a server certificate in DER format from an endpoint
 ```console
-openssl s_client -showcerts -connect www.example.com:443 < /dev/null | openssl x509 -outform DER > www.example.com.der
+openssl s_client -showcerts -servername www.example.com -connect www.example.com:443 < /dev/null | openssl x509 -outform DER > www.example.com.der
 ```
 
 ## MacOS
