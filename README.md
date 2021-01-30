@@ -29,6 +29,13 @@ Download from URL to file resuming from last interruption
 curl -L -O -C - url -o file
 ```
 
+## Wget
+
+Download recursively from an URL all files of a given type to current directory
+```console
+wget -r -np -nd -nc -A "*.xyz" 'url'
+```
+
 ## OpenSSL
 
 Generate a pseudo-random password from secure random data
