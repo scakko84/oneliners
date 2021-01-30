@@ -22,6 +22,13 @@ Write image file to usb device
 dd if=file.img of=/dev/sdx bs=4M oflag=sync
 ```
 
+## cURL
+
+Download a file from URL resuming from last interruption
+```console
+curl -L -O -C - url
+```
+
 ## OpenSSL
 
 Generate a pseudo-random password from secure random data
