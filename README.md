@@ -24,9 +24,9 @@ dd if=file.img of=/dev/sdx bs=4M oflag=sync
 
 ## cURL
 
-Download a file from URL resuming from last interruption
+Download from URL to file resuming from last interruption
 ```console
-curl -L -O -C - url
+curl -L -O -C - url -o file
 ```
 
 ## OpenSSL
