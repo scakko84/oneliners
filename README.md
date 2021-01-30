@@ -15,7 +15,7 @@ scp -r directory user@host:"'path/with spaces/'"
 
 Delete all files matching multiple extensions recursively in directory
 ```console
-find . \( -name '*.ext1' -or -name '*.ext2' \) -delete
+find . \( -name '*.zip' -or -name '*.txt' \) -delete
 ```
 Write image file to usb device
 ```console
@@ -26,14 +26,14 @@ dd if=file.img of=/dev/sdx bs=4M oflag=sync
 
 Download from URL to file resuming from last interruption
 ```console
-curl -L -O -C - url -o file
+curl -L -O -C - 'http://www.example.com/example.zip' -o example.zip
 ```
 
 ## Wget
 
 Download recursively from an URL all files of a given type to current directory
 ```console
-wget -r -np -nd -nc -A "*.xyz" 'url'
+wget -r -np -nd -nc -A "*.zip" 'http://www.example.com/'
 ```
 
 ## OpenSSL
